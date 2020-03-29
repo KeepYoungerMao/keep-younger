@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: register-center
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/
+    # 是否从其它服务中心同步服务列表
+    fetch-registry: false
+    # 是否把自己作为服务注册到其它服务中心
+    register-with-eureka: false
