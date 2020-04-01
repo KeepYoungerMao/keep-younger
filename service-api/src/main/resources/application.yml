@@ -1,1 +1,31 @@
+server:
+  port: 20001
 
+spring:
+  application:
+    name: service-api
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/keep_younger?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.dayi.entity
+  configuration:
+    # can get id while saving data
+    use-generated-keys: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/
+
+security:
+  oauth2:
+    resource:
+      id: service-api
+      user-info-uri: http://127.0.0.1:11000/sso/auth/user
+      prefer-token-info: false

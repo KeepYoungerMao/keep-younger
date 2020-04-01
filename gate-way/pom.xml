@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.5.RELEASE</version>
+        <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mao</groupId>
-    <artifactId>service-api</artifactId>
-    <version>1.0.0</version>
-    <name>service-api</name>
+    <artifactId>gate-way</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>gate-way</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,25 +20,14 @@
     </properties>
 
     <dependencies>
-        <!-- module: common -->
         <dependency>
             <groupId>com.mao</groupId>
             <artifactId>common</artifactId>
             <version>1.0.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.2</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -46,29 +35,13 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>

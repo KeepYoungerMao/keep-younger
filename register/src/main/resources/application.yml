@@ -8,7 +8,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:9000/eureka/
-    # ÊÇ·ñ´ÓÆäËü·şÎñÖĞĞÄÍ¬²½·şÎñÁĞ±í
+    # ç¦æ­¢ä»æ³¨å†Œä¸­å¿ƒè·å–ä¿¡æ¯
     fetch-registry: false
-    # ÊÇ·ñ°Ñ×Ô¼º×÷Îª·şÎñ×¢²áµ½ÆäËü·şÎñÖĞĞÄ
+    # ç¦æ­¢å°†è‡ªå·±æ³¨å†Œåˆ°æ³¨å†Œä¸­å¿ƒ
     register-with-eureka: false

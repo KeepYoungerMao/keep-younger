@@ -61,7 +61,7 @@ public class KyAuthorizationServerConfigurer extends AuthorizationServerConfigur
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) {
         security.checkTokenAccess("isAuthenticated()")
-                .allowFormAuthenticationForClients();
+                .tokenKeyAccess("permitAll()");
     }
 
 
